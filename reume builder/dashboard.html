@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dashboard</title>
+
+    <script src="https://kit.fontawesome.com/90f0a938cd.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <div class="back"></div>
+    <div class="dashboard col-md-10 row">
+        <div class="side-panel col-md-2">
+            <section class="list">
+                <ul>
+                    <li name="ifrmform" onclick="go('./forms/Personal.html')">Personal Information</li>
+                    <li name="ifrmform" onclick="go('./forms/Achievements.html')">Career Objective</li>
+                    <li name="ifrmform" onclick="go('./forms/technical_prof.html')">Technical Proficiencies</li>
+                    <li name="ifrmform" onclick="go('./forms/Academic.html')">Academic Credentials</li>
+                    <li name="ifrmform" onclick="go('./forms/experiential_learning.html')">Experiential Learning</li>
+                    <li name="ifrmform" onclick="go('./forms/training_certification.html')">Training & Certification</li>
+                    <li name="ifrmform" onclick="go('./forms/projects_report.html')">Project Report</li>
+                    <li name="ifrmform" onclick="go('./forms/interpersonal.html')">Interpersonal Skills</li>
+                    <li name="ifrmform" onclick="go('./forms/Achievements.html')">Achievements</li>
+                    <li name="ifrmform" onclick="go('./forms/Achievements.html')">Co-Curricular Activities</li>
+                    <li name="ifrmform" onclick="go('./forms/Achievements.html')">References</li>
+                </ul>
+                <script>
+                    function go(loc) {
+  document.getElementById('ifrm').src = loc;
+}
+                </script>
+            </section>
+        </div>
+        <div class="form-frame col-md-6">
+            <div class="col-md-12" id="form-section">
+                <iframe id="ifrm" src="./forms/Academic.html" frameborder="0">
+                
+                </iframe>
+            </div>
+            <div class="button-section col-md-12 row">
+                <button type="submit" class="btn col-md-4">&larr; BACK</button>
+                <button type="reset" class="btn3 col-md-4">Reset <i class="fa fa-undo" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="vector col-md-3">
+            <div class="col-md-12">
+                <img src="./assets/images/undraw_profile_6l1l.svg">
+            </div>
+            <div class="buttons col-md-12">
+                
+                <button class="btn3">Edit <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <br>
+
+                <button type="submit" class="btn">SAVE & NEXT &rarr;</button>
+                
+                <button class="btn btn2">DOWNLOAD</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

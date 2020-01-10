@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Achivements</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/training_certification.css">
+    <script type="text/javascript">
+        var i=0;
+            function add()
+            {   
+                var name='n'+i;
+                var txtNewInputBox = document.createElement('input');        
+                txtNewInputBox.setAttribute("type", "text");		
+                txtNewInputBox.setAttribute("placeholder", "enter your achivement");
+                txtNewInputBox.setAttribute("class", "form-control form-control-lg");
+                //txtNewInputBox.setAttribute("name", name);
+                document.getElementById("newElementId").appendChild(txtNewInputBox);
+                i++;
+            }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <p><h3 style="margin: 20px;">Add your Achivements</h3></p>
+            <form action="" method="POST">
+                <input class="form-control form-control-lg" type="text" placeholder="enter your achivement">
+                <input class="form-control form-control-lg" type="text" placeholder="enter your achivement">
+                <input class="form-control form-control-lg" type="text" placeholder="enter your achivement">
+                <div id="newElementId"></div>
+                <button style="margin-left: 40px" type="button" class="btn btn-primary btn-sm btn-block" onclick="add()">Add More Achivements</button>
+                <div class="progress" style="margin-top: 30px;">
+                    <div class="progress-bar" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%; background-color: green !important;
+                    ">
+                      40%
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
